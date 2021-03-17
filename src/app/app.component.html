@@ -1,0 +1,7 @@
+<div class="container">
+  <app-create-element (playerCreated)="onPlayerAdded($event)"></app-create-element>
+    <hr>
+    <app-element *ngFor="let element of players"
+    [player]="element"
+    ></app-element>
+</div>
